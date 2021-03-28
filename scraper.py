@@ -7,8 +7,8 @@ r = requests.get(url)
 
 soup = BeautifulSoup(r.content, features="html.parser")
 
+# ambil semua title materi
 titles = soup.findAll("h3")
 
-# comment apa blabla
 for title in titles:
     print(title.text)
