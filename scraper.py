@@ -9,5 +9,6 @@ soup = BeautifulSoup(r.content, features="html.parser")
 
 titles = soup.findAll("h3")
 
+# comment apa blabla
 for title in titles:
     print(title.text)
